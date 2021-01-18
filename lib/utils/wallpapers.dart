@@ -18,18 +18,16 @@ class Wallpapers {
   }
 }
 
-//helps to create a list of wallpapers
 class Images {
   List<Wallpapers> wallpapers;
   bool success;
-  //Images({this.responseCode, this.results});
   Images.fromJson(Map<String, dynamic> json) {
     success = json['success'];
     if (success) {
       wallpapers = List<Wallpapers>();
       json['wallpapers'].forEach((v) {
         wallpapers
-            .add(new Wallpapers.fromJson(v)); //adds each result to results list
+            .add(new Wallpapers.fromJson(v)); 
       });
     }
   }
@@ -46,18 +44,16 @@ class Categories {
   }
 }
 
-//helps to create a list of categories
 class Data {
   List<Categories> categories;
   bool success;
-  //Images({this.responseCode, this.results});
   Data.fromJson(Map<String, dynamic> json) {
     success = json['success'];
     if (success) {
       categories = List<Categories>();
       json['categories'].forEach((v) {
         categories
-            .add(new Categories.fromJson(v)); //adds each result to results list
+            .add(new Categories.fromJson(v)); 
       });
     }
   }
