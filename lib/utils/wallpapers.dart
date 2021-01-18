@@ -1,6 +1,6 @@
 import 'package:vista_wallpaper/utils/config.dart';
 
-//obtain api key from  https://wall.alphacoders.com/api.php
+//obtain api key at  https://wall.alphacoders.com/api.php
 const String authKey = apiKey;
 
 class Wallpapers {
